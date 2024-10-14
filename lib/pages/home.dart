@@ -1,4 +1,5 @@
 import 'package:calculator/pages/addition.dart';
+import 'package:calculator/pages/subtraction.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -41,7 +42,10 @@ class Home extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purpleAccent,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, 
+                    MaterialPageRoute(builder: (context) => Subtraction() ));
+                  },
                   child: Text(
                     "Subtraction",
                     style: TextStyle(
