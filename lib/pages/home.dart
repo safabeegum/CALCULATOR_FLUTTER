@@ -1,5 +1,5 @@
+import 'package:calculator/pages/addition.dart';
 import 'package:flutter/material.dart';
-
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -19,16 +19,21 @@ class Home extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purpleAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("Addition",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Addition()));
+                  },
+                  child: Text(
+                    "Addition",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
@@ -36,33 +41,36 @@ class Home extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purpleAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("Subtraction",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {},
+                  child: Text(
+                    "Subtraction",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.purpleAccent
-                  ),
-                  onPressed: (){
-
-                  }, child: Text("Multiplication",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),)),
+                      backgroundColor: Colors.purpleAccent),
+                  onPressed: () {},
+                  child: Text(
+                    "Multiplication",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
@@ -70,13 +78,14 @@ class Home extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purpleAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("Division",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {},
+                  child: Text(
+                    "Division",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
           ],
         ),
